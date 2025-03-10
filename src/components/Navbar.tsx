@@ -12,7 +12,7 @@ function Navbar() {
         <Link href="/">Homepage</Link>
         <Link href="/menu">Menu</Link>
         <Link href="/contact">Contact</Link>
-        <Link href="/cart">Cart</Link>
+        <Link className="hidden" href="/cart">Cart</Link>
       </div>
       <div className="text-xl md:font-bold md:text-center">
         <Link href="/">Pizza Company</Link>

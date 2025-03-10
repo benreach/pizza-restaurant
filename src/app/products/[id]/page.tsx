@@ -8,7 +8,8 @@ type Props = {
   title: string;
   img: string;
   desc: string;
-  options: { title: string, additionalPrice: number }[];
+  // options: { title: string, additionalPrice: number }[];
+  option: string;
 };
 
 const singleProduct: Props = {
@@ -17,10 +18,7 @@ const singleProduct: Props = {
   desc: "Juicy beef patty with fresh veggies, and melted cheese.",
   img: "/temporary/p1.png",
   price: 25,
-  options: {
-    title: "small",
-    additionalPrice: 2
-  },
+  option: "small"
 };
 function SingleProductPage({}) {
   return (
@@ -42,21 +40,9 @@ function SingleProductPage({}) {
         </h1>
         <p className="text-md md:text-xl lg:text-2xl">{singleProduct.desc}</p>
       </div>
-      <div className="flex flex-row gap-2">
-        <button className="border-1 p-2  hover:border-none rounded-lg hover:bg-amber-500">
-          Small
-        </button>
-        <button className="border-1 p-2  hover:border-none rounded-lg hover:bg-amber-500">
-          Medium
-        </button>
-        <button className="border-1 p-2  hover:border-none rounded-lg hover:bg-amber-500">
-          Large
-        </button>
-      </div>
       <Price
           price={singleProduct.price}
           id={singleProduct.id}
-          options={singleProduct.options}
         />
     </div>
   );

@@ -15,8 +15,8 @@ type Items = {
 
 
 const initialCart = [
-  { id: 1, name: 'Wireless Headphones', price: 99.99, qty: 1, img: '/temporary/p1.png' },
-  { id: 2, name: 'Smartwatch', price: 149.99, qty: 1, img: '/temporary/p2.png' },
+  { id: 1, name: 'Domino Pizza', price: 25, qty: 1, img: '/temporary/p1.png' },
+  { id: 2, name: 'Burger', price: 20, qty: 1, img: '/temporary/p2.png' },
 ];
 
 export default function CartPage() {

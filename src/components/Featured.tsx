@@ -1,6 +1,4 @@
 "use client";
-
-import { set } from "mongoose";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
